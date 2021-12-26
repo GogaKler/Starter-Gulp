@@ -1,0 +1,25 @@
+$accent: #73BFFF;  // Main color
+$text: #333;		// Main color
+$dark: #202328; 	// Main color
+$down: #f5ffff; 	// Main color
+$base-font-size: 16px; 
+$small-font-size: 14px; 
+$base-line-height: 1.75;
+$systemfont: -applesystem, BlinkMacSystemFont, Arial, sans-serif;
+$radius: 5px;
+$radius-style: 0 5px;
+$transition: .25s ease-out;
+$font-family: 'Fira Sans', sans-serif;
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+@import "../block/header.scss";
+@import "../block/footer.scss";
+
+
+@import "../_media/Index_media"; // media 
