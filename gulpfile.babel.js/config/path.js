@@ -1,7 +1,7 @@
 const pathSrc = "./src";
 const pathDest = "./public";
 
-module.exports = {
+export default {
 	root: pathDest,
 
 	html: {
@@ -17,7 +17,7 @@ module.exports = {
 	},
 
 	scss: {
-		src: [pathSrc + '/sass/{styles,}/*.{sass,scss}', pathSrc + '/sass/{libs,}/{bootstrap,swiper,micromodal}/*.{sass,scss}'],
+		src: [pathSrc + '/sass/{styles,}/*.{sass,scss}', pathSrc + '/sass/{libs,}/{bootstrap,}/*.{sass,scss}'],
 		watch: [pathSrc + '/sass/**/*.{sass,scss}', '!.src/sass/{libs,}/{bootstrap,swiper,mircomodal}/*.{sass,scss}'],
 		dest: pathDest + '/css/'
 	},
@@ -35,9 +35,8 @@ module.exports = {
 	},
 
 	font: {
-		src: pathSrc + "/font/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
-		watch: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
-		dest: pathDest + "/font"
+		src: pathSrc + '/font/**/*.{eot,ttf,otf,otc,ttc,woff,woof2,svg}',
+		watch: pathSrc + '/font/**/*.{eot,ttf,otf,otc,ttc,woff,woof2,svg}',
+		dest: pathDest + '/font/'
 	}
-
 }
