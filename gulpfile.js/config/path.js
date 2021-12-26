@@ -17,9 +17,9 @@ module.exports = {
 	},
 
 	scss: {
-		src: pathSrc + '/sass/{libs,styles}/*.{sass,scss}',
-		watch: pathSrc + '/sass/**/*.{sass,scss}',  // ['/sass/**/*.{sass,scss}', '!/sass/libs/*.{sass,scss}'],
-		dest: pathDest + "/css"
+		src: [pathSrc + '/sass/{styles,}/*.{sass,scss}', pathSrc + '/sass/{libs,}/{bootstrap,swiper,micromodal}/*.{sass,scss}'],
+		watch: [pathSrc + '/sass/**/*.{sass,scss}', '!.src/sass/{libs,}/{bootstrap,swiper,mircomodal}/*.{sass,scss}'],
+		dest: pathDest + '/css/'
 	},
 
 	js: {
@@ -27,10 +27,11 @@ module.exports = {
 		watch: pathSrc + "/js/**/*.js",
 		dest: pathDest + "/js"
 	},
+	
 	img: {
-		src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
-		watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
-		dest: pathDest + "/img"
+		src: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
+		watch: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
+		dest: pathDest + '/img/'
 	},
 
 	font: {

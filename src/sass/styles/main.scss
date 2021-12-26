@@ -1,25 +1,10 @@
-$accent: #73BFFF;  // Main color
-$text: #333;		// Main color
-$dark: #202328; 	// Main color
-$down: #f5ffff; 	// Main color
-$base-font-size: 16px; 
-$small-font-size: 14px; 
-$base-line-height: 1.75;
-$systemfont: -applesystem, BlinkMacSystemFont, Arial, sans-serif;
-$radius: 5px;
-$radius-style: 0 5px;
-$transition: .25s ease-out;
-$font-family: 'Fira Sans', sans-serif;
+/* Global Styles */
+@import "../global/global_styles.scss"; // Универсальные стили
 
+/*  Main Styles */
+@import "../block/header.scss"; // HEADER
+// CONTENT
+@import "../block/footer.scss"; // FOOTER
 
-body{
-	padding: 0;
-	margin: 0;
-}
-
-
-@import "../block/header.scss";
-@import "../block/footer.scss";
-
-
-@import "../_media/Index_media"; // media 
+/* Media */
+@import "../_media/Index_media.scss"; // MEDIA
